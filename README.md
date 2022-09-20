@@ -1,2 +1,2 @@
-# google-data-analytics
+# Analitik Data Google
 Aktivitas Sertifikasi Analitik Data Google

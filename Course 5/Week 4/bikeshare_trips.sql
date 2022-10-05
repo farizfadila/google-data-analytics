@@ -38,4 +38,5 @@ SELECT
         SELECT SUM(num_of_trips)
         FROM station_w_longest_bikeid
         )*100,2) AS percent_of_trips_contribution
-FROM station_w_longest_bikeid;
+FROM station_w_longest_bikeid
+ORDER BY percent_of_trips_contribution DESC ;

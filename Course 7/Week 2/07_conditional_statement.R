@@ -1,5 +1,5 @@
 # Conditional Statement
-# return based on condition specification
+# return based on condition specification.
 if (5>3){
   print("Print ini jika 5>3 adalah TRUE")
 }

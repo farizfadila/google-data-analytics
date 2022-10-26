@@ -1,0 +1,358 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={C7M4L2A1: You and GGPlot},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{C7M4L2A1: You and GGPlot}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+\hypertarget{background-for-this-activity}{%
+\subsection{Background for this
+activity}\label{background-for-this-activity}}
+
+In this activity, you'll review a scenario, and use ggplot2 to quickly
+create data visualizations that allow you to explore your data and gain
+new insights. You will learn more about basic ggplot2 syntax and data
+visualization in R.
+
+Throughout this activity, you will also have the opportunity to practice
+writing your own code by making changes to the code chunks yourself. If
+you encounter an error or get stuck, you can always check the
+Lesson2\_GGPlot\_Solutions .rmd file in the Solutions folder under Week
+4 for the complete, correct code.
+
+\hypertarget{the-scenario}{%
+\subsection{The Scenario}\label{the-scenario}}
+
+In this scenario, you are a junior data analyst working for a hotel
+booking company. You have cleaned and manipulated your data, and gotten
+some initial insights you would like to share. Now, you are going to
+create some simple data visualizations with the \texttt{ggplot2}
+package. You will use basic \texttt{ggplot2} syntax and troubleshoot
+some common errors you might encounter.
+
+\hypertarget{step-1-import-your-data}{%
+\subsection{Step 1: Import your data}\label{step-1-import-your-data}}
+
+In the chunk below, you will use the \texttt{read\_csv()} function to
+import data from a .csv in the project folder called
+``hotel\_bookings.csv'' and save it as a data frame called
+\texttt{hotel\_bookings}:
+
+If this line causes an error, copy in the line setwd(``projects/Course
+7/Week 4'') before it.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{hotel\_bookings }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"D:/Programming/R/Analisis Data Google/Course 7/Week 4/hotel\_bookings.csv"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{step-2-look-at-a-sample-of-your-data}{%
+\subsection{Step 2: Look at a sample of your
+data}\label{step-2-look-at-a-sample-of-your-data}}
+
+Use the \texttt{head()} function to preview your data:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{head}\NormalTok{(hotel\_bookings)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##          hotel is_canceled lead_time arrival_date_year arrival_date_month
+## 1 Resort Hotel           0       342              2015               July
+## 2 Resort Hotel           0       737              2015               July
+## 3 Resort Hotel           0         7              2015               July
+## 4 Resort Hotel           0        13              2015               July
+## 5 Resort Hotel           0        14              2015               July
+## 6 Resort Hotel           0        14              2015               July
+##   arrival_date_week_number arrival_date_day_of_month stays_in_weekend_nights
+## 1                       27                         1                       0
+## 2                       27                         1                       0
+## 3                       27                         1                       0
+## 4                       27                         1                       0
+## 5                       27                         1                       0
+## 6                       27                         1                       0
+##   stays_in_week_nights adults children babies meal country market_segment
+## 1                    0      2        0      0   BB     PRT         Direct
+## 2                    0      2        0      0   BB     PRT         Direct
+## 3                    1      1        0      0   BB     GBR         Direct
+## 4                    1      1        0      0   BB     GBR      Corporate
+## 5                    2      2        0      0   BB     GBR      Online TA
+## 6                    2      2        0      0   BB     GBR      Online TA
+##   distribution_channel is_repeated_guest previous_cancellations
+## 1               Direct                 0                      0
+## 2               Direct                 0                      0
+## 3               Direct                 0                      0
+## 4            Corporate                 0                      0
+## 5                TA/TO                 0                      0
+## 6                TA/TO                 0                      0
+##   previous_bookings_not_canceled reserved_room_type assigned_room_type
+## 1                              0                  C                  C
+## 2                              0                  C                  C
+## 3                              0                  A                  C
+## 4                              0                  A                  A
+## 5                              0                  A                  A
+## 6                              0                  A                  A
+##   booking_changes deposit_type agent company days_in_waiting_list customer_type
+## 1               3   No Deposit  NULL    NULL                    0     Transient
+## 2               4   No Deposit  NULL    NULL                    0     Transient
+## 3               0   No Deposit  NULL    NULL                    0     Transient
+## 4               0   No Deposit   304    NULL                    0     Transient
+## 5               0   No Deposit   240    NULL                    0     Transient
+## 6               0   No Deposit   240    NULL                    0     Transient
+##   adr required_car_parking_spaces total_of_special_requests reservation_status
+## 1   0                           0                         0          Check-Out
+## 2   0                           0                         0          Check-Out
+## 3  75                           0                         0          Check-Out
+## 4  75                           0                         0          Check-Out
+## 5  98                           0                         1          Check-Out
+## 6  98                           0                         1          Check-Out
+##   reservation_status_date
+## 1              2015-07-01
+## 2              2015-07-01
+## 3              2015-07-02
+## 4              2015-07-02
+## 5              2015-07-03
+## 6              2015-07-03
+\end{verbatim}
+
+You can also use \texttt{colnames()} to get the names of all the columns
+in your data set. Run the code chunk below to find out the column names
+in this data set:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{colnames}\NormalTok{(hotel\_bookings)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1] "hotel"                          "is_canceled"                   
+##  [3] "lead_time"                      "arrival_date_year"             
+##  [5] "arrival_date_month"             "arrival_date_week_number"      
+##  [7] "arrival_date_day_of_month"      "stays_in_weekend_nights"       
+##  [9] "stays_in_week_nights"           "adults"                        
+## [11] "children"                       "babies"                        
+## [13] "meal"                           "country"                       
+## [15] "market_segment"                 "distribution_channel"          
+## [17] "is_repeated_guest"              "previous_cancellations"        
+## [19] "previous_bookings_not_canceled" "reserved_room_type"            
+## [21] "assigned_room_type"             "booking_changes"               
+## [23] "deposit_type"                   "agent"                         
+## [25] "company"                        "days_in_waiting_list"          
+## [27] "customer_type"                  "adr"                           
+## [29] "required_car_parking_spaces"    "total_of_special_requests"     
+## [31] "reservation_status"             "reservation_status_date"
+\end{verbatim}
+
+\hypertarget{step-3-install-and-load-the-ggplot2-package}{%
+\subsection{Step 3: Install and load the `ggplot2'
+package}\label{step-3-install-and-load-the-ggplot2-package}}
+
+If you haven't already installed and loaded the \texttt{ggplot2}
+package, you will need to do that before you can use the
+\texttt{ggplot()} function.
+
+Run the code chunk below to install and load \texttt{ggplot2}. This may
+take a few minutes.
+
+\begin{verbatim}
+## Warning: package 'ggplot2' was built under R version 4.2.1
+\end{verbatim}
+
+\hypertarget{step-4-begin-creating-a-plot}{%
+\subsection{Step 4: Begin creating a
+plot}\label{step-4-begin-creating-a-plot}}
+
+A stakeholder tells you, ``I want to target people who book early, and I
+have a hypothesis that people with children have to book in advance.''
+
+When you start to explore the data, it doesn't show what you would
+expect. That is why you decide to create a visualization to see how true
+that statement is-- or isn't.
+
+You can use \texttt{ggplot2} to do this. Try running the code below:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data=}\NormalTok{hotel\_bookings) }\SpecialCharTok{+}
+  \FunctionTok{geom\_point}\NormalTok{(}\AttributeTok{mapping=}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\NormalTok{lead\_time, }\AttributeTok{y=}\NormalTok{children))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 4 rows containing missing values (geom_point).
+\end{verbatim}
+
+\includegraphics{Lesson2_GGPlot_files/figure-latex/creating a plot-1.pdf}
+
+The geom\_point() function uses points to create a scatterplot.
+Scatterplots are useful for showing the relationship between two numeric
+variables. In this case, the code maps the variable `lead\_time' to the
+x-axis and the variable `children' to the y-axis.
+
+On the x-axis, the plot shows how far in advance a booking is made, with
+the bookings furthest to the right happening the most in advance. On the
+y-axis it shows how many children there are in a party.
+
+The plot reveals that your stakeholder's hypothesis is incorrect. You
+report back to your stakeholder that many of the advanced bookings are
+being made by people with 0 children.
+
+\hypertarget{step-5-try-it-on-your-own}{%
+\subsection{Step 5: Try it on your
+own}\label{step-5-try-it-on-your-own}}
+
+Next, your stakeholder says that she wants to increase weekend bookings,
+an important source of revenue for the hotel. Your stakeholder wants to
+know what group of guests book the most weekend nights in order to
+target that group in a new marketing campaign. She suggests that guests
+without children book the most weekend nights. Is this true?
+
+Try mapping `stays\_in\_weekend\_nights' on the x-axis and `children' on
+the y-axis by filling out the remainder of the code below.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data =}\NormalTok{ hotel\_bookings) }\SpecialCharTok{+}
+ \FunctionTok{geom\_point}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\NormalTok{stays\_in\_weekend\_nights , }\AttributeTok{y=}\NormalTok{children))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 4 rows containing missing values (geom_point).
+\end{verbatim}
+
+\includegraphics{Lesson2_GGPlot_files/figure-latex/unnamed-chunk-1-1.pdf}
+
+If you correctly enter this code, you should have a scatterplot with
+`stays\_in\_weekend\_nights' on the x-axis and `children' on the y-axis.
+
+What did you discover? Is your stakeholder correct?
+
+What other types of plots could you use to show this relationship?
+
+Remember, if you're having trouble filling out a code block, check the
+solutions document for this activity.
+
+\hypertarget{activity-wrap-up}{%
+\subsection{Activity Wrap Up}\label{activity-wrap-up}}
+
+The \texttt{ggplot2} package allows you to quickly create data
+visualizations that can answer questions and give you insights about
+your data. Now that you are a little more familiar with the basic
+\texttt{ggplot2} syntax, you can practice these skills by modifying the
+code chunks in the rmd file, or use this code as a starting point in
+your own project console. With \texttt{ggplot2}, you will be able to
+create and share data visualizations without leaving your \texttt{R}
+console. You will learn more about \texttt{ggplot2} throughout this
+course and eventually create even more complex and beautiful
+visualizations!
+
+\end{document}
